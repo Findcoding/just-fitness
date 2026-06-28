@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aspirational Visual Gallery | JUST FITNESS</title>
+  <meta name="description" content="Tour JUST FITNESS's luxury spaces online. Browse high-definition photos of our high-performance fitness center, recovery spa, cafe, and lounge areas.">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- JS -->
+  <script src="js/main.js" defer></script>
+  
+  <style>
+    /* Custom inline styles for gallery adjustments */
+    .gallery-filter-bar {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-bottom: 4rem;
+      flex-wrap: wrap;
+    }
+    .filter-btn {
+      background: var(--glass-bg);
+      border: 1px solid var(--border-glass);
+      color: var(--text-secondary);
+      padding: 0.6rem 1.5rem;
+      border-radius: 50px;
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 0.8rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: var(--transition-fast);
+    }
+    .filter-btn:hover, .filter-btn.active {
+      background: var(--accent-red);
+      color: var(--text-white);
+      border-color: var(--accent-red);
+    }
+  </style>
+</head>
+<body class="page-theme-general">
+
+  <!-- Global Header -->
+  <header id="global-header"></header>
+
+  <!-- Hero Header -->
+  <section class="hero hero-gallery" style="min-height: 50vh; padding-top: 150px; padding-bottom: 5rem;">
+    <div class="hero-glow-1"></div>
+    <div class="container">
+      <div class="hero-content" style="max-width: 800px;">
+        <span class="hero-tag">ASPIRATIONAL MEDIA</span>
+        <h1 style="font-size: 4rem;">The JUST <span>Aesthetic</span></h1>
+        <p>Tour our premium spaces. Experience the quiet luxury, bespoke equipment, and therapeutic spaces of our New York penthouse club.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="section-padding">
+    <div class="container">
+      
+      <!-- Filter Bar -->
+      <div class="gallery-filter-bar">
+        <button class="filter-btn active">All Spaces</button>
+        <button class="filter-btn">Strength Floors</button>
+        <button class="filter-btn">Contrast Spa</button>
+        <button class="filter-btn">Fuel Cafe</button>
+      </div>
+
+      <!-- Photo Grid -->
+      <div class="showcase-grid">
+        
+        <!-- Photo 1 -->
+        <div class="showcase-item">
+          <img src="assets/gym1.avif" alt="Strength floor barbell area" class="showcase-img">
+          <div class="showcase-overlay">
+            <span class="showcase-category">Strength floor</span>
+            <h3 class="showcase-title">Olympic Platforms</h3>
+          </div>
+        </div>
+
+        <!-- Photo 2 -->
+        <div class="showcase-item">
+          <img src="assets/eqip2.jpg" alt="Steam room contrast bath" class="showcase-img">
+          <div class="showcase-overlay">
+            <span class="showcase-category">Contrast Spa</span>
+            <h3 class="showcase-title">Finnish Dry Sauna</h3>
+          </div>
+        </div>
+
+        <!-- Photo 3 -->
+        <div class="showcase-item">
+          <img src="assets/tool1.avif" alt="Café meal prep area" class="showcase-img">
+          <div class="showcase-overlay">
+            <span class="showcase-category">Fuel Cafe</span>
+            <h3 class="showcase-title">JUST Nutrition Juice Bar</h3>
+          </div>
+        </div>
+
+        <!-- Photo 4 -->
+        <div class="showcase-item">
+          <img src="assets/gym3.avif" alt="Premium dumbells area" class="showcase-img">
+          <div class="showcase-overlay">
+            <span class="showcase-category">Strength floor</span>
+            <h3 class="showcase-title">Elite Dumbbell Racks</h3>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Action CTA -->
+  <section class="section-padding final-cta">
+    <div class="hero-glow-1"></div>
+    <div class="container final-cta-content">
+      <h2>Step Inside JUST FITNESS</h2>
+      <p>A personal visit is the best way to feel the quiet luxury of JUST FITNESS. Schedule a custom club tour with our concierge team today.</p>
+      <a href="contact.html" class="btn btn-primary" style="margin-top: 2rem;">Schedule Club Tour</a>
+    </div>
+  </section>
+
+  <!-- Global Footer -->
+  <footer id="global-footer"></footer>
+
+</body>
+</html>

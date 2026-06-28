@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bespoke Nutrition &amp; Cafe | InBody Scan | JUST FITNESS</title>
+  <meta name="description" content="Discover custom nutrition planning at JUST FITNESS. Optimize muscle building or weight loss with registered clinical nutritionists and healthy cafe menu options.">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- JS -->
+  <script src="js/main.js" defer></script>
+</head>
+<body class="page-theme-nutrition">
+
+  <!-- Global Header -->
+  <header id="global-header"></header>
+
+  <!-- Hero Header -->
+  <section class="hero hero-nutrition" style="min-height: 50vh; padding-top: 150px; padding-bottom: 5rem;">
+    <div class="hero-glow-1"></div>
+    <div class="container">
+      <div class="hero-content" style="max-width: 800px;">
+        <span class="hero-tag">FUEL &amp; DIETETICS</span>
+        <h1 style="font-size: 4rem;">Bespoke Nutrition &amp; <span>Fuel Café</span></h1>
+        <p>Achieve true physical transformation. JUST FITNESS pairs clinical body scans with sports nutritionists to build custom meal strategies that fuel performance and muscle building.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Consultation & Inbody scans -->
+  <section class="section-padding">
+    <div class="container grid-2">
+      <div>
+        <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem;">Scientific Food Engineering</h2>
+        <p style="font-size: 1.1rem; margin-bottom: 1.5rem; font-weight: 400; line-height: 1.7;">Exercise is only half the loop. True physical adaptation happens when you fuel your cells with precise macronutrients.</p>
+        <p style="font-size: 1.05rem; color: var(--text-secondary); margin-bottom: 2rem;">Our registered sports dietitians analyze your basal metabolic rate and body composition using medical InBody scanners. We map your specific calorie thresholds and configure daily meals delivered straight to your home or prepared fresh at our club lounge.</p>
+        <a href="contact.html" class="btn btn-primary">Book Consultation</a>
+      </div>
+      <div>
+        <div style="position: relative; border-radius: 24px; overflow: hidden; border: 1px solid var(--border-light); height: 420px;">
+          <img src="assets/eqip5.avif" alt="JUST FITNESS Nutrition Consultation" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cafe Highlights Menu -->
+  <section class="section-padding" style="background: rgba(255, 255, 255, 0.025);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">THE MENU</span>
+        <h2 class="section-title">JUST Fuel Cafe &amp; Lounge Highlights</h2>
+      </div>
+      
+      <div class="grid-3" style="margin-top: 4rem;">
+        
+        <!-- Cafe Item 1 -->
+        <div class="feature-card">
+          <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem; display: flex; justify-content: space-between; align-items: center;">
+            Pro Recovery Shake
+            <span style="font-size: 1rem; color: var(--accent-red);">$12.00</span>
+          </h3>
+          <p class="feature-desc">Cold-pressed organic almond milk, grass-fed whey isolate protein, dynamic maca root, chia seeds, and raw organic honey.</p>
+        </div>
+
+        <!-- Cafe Item 2 -->
+        <div class="feature-card">
+          <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem; display: flex; justify-content: space-between; align-items: center;">
+            Keto Salmon Plate
+            <span style="font-size: 1rem; color: var(--accent-red);">$24.00</span>
+          </h3>
+          <p class="feature-desc">Pan-seared wild sockeye salmon, organic avocado slices, steamed organic broccoli florets, and extra virgin olive oil drizzle.</p>
+        </div>
+
+        <!-- Cafe Item 3 -->
+        <div class="feature-card">
+          <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem; display: flex; justify-content: space-between; align-items: center;">
+            Green Clarity Juice
+            <span style="font-size: 1rem; color: var(--accent-red);">$10.00</span>
+          </h3>
+          <p class="feature-desc">Cold-pressed organic celery, cucumber ribs, granny smith apple, ginger root, lemon peel, and fresh mint sprigs.</p>
+        </div>
+
+      </div>
+
+      <!-- Interactive Macros Calculator -->
+      <div style="max-width: 600px; margin: 6rem auto 0; background: var(--glass-bg); backdrop-filter: var(--glass-blur); -webkit-backdrop-filter: var(--glass-blur); border: 1px solid var(--border-glass); padding: 3.5rem; border-radius: 28px; box-shadow: 0 20px 45px rgba(0, 0, 0, 0.2);">
+        <h3 style="font-family: var(--font-heading); font-size: 2rem; font-weight: 800; text-align: center; margin-bottom: 1rem; color: var(--text-white);">Macro &amp; Calorie Calculator</h3>
+        <p style="text-align: center; color: var(--text-secondary); margin-bottom: 2.5rem;">Estimate your target caloric intake based on your measurements and goals.</p>
+        
+        <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+          <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem;">
+            <div class="form-group" style="margin-bottom: 0;">
+              <label class="form-label">Weight (kg)</label>
+              <input type="number" id="calc-weight" class="form-input" placeholder="75" required>
+            </div>
+            <div class="form-group" style="margin-bottom: 0;">
+              <label class="form-label">Height (cm)</label>
+              <input type="number" id="calc-height" class="form-input" placeholder="178" required>
+            </div>
+          </div>
+          <div class="form-group" style="margin-bottom: 0;">
+            <label class="form-label">Primary Performance Goal</label>
+            <select id="calc-goal" class="form-select" required>
+              <option value="gain">Build Muscle / Hypertrophy</option>
+              <option value="lose">Fat Loss &amp; Conditioning</option>
+            </select>
+          </div>
+          <button type="button" class="btn btn-primary" onclick="calculateMacros()" style="width: 100%; margin-top: 1rem; box-shadow: 0 10px 20px rgba(255, 51, 51, 0.15);">Calculate Target</button>
+        </div>
+
+        <!-- Hidden result card -->
+        <div id="calc-result" style="display: none; margin-top: 3rem; background: rgba(255, 51, 51, 0.03); padding: 2rem; border-radius: 18px; border: 1px solid var(--accent-red); text-align: center; transition: var(--transition-smooth);">
+          <h4 style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 800; color: var(--accent-red); margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.05em;">Your Performance Target</h4>
+          <p style="font-family: var(--font-heading); font-size: 1.8rem; font-weight: 900; color: var(--text-white); margin-bottom: 1rem;" id="calc-calories-display">Calories: 2,450 kcal</p>
+          <p style="font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 1.75rem;" id="calc-meal-display">Recommended Fuel: Pro Recovery Shake</p>
+          <a href="contact.html" class="btn btn-secondary" style="font-size: 0.75rem; padding: 0.6rem 1.2rem;">Claim Free Nutrition Consult</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Global Footer -->
+  <footer id="global-footer"></footer>
+
+</body>
+</html>
